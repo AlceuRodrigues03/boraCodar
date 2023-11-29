@@ -20,14 +20,11 @@ module.exports = {
           400: "#9F67FF",
           500: "#7C3AED",
         },
-        white: "#ffffff",
+        white: "##fffcf7",
         red: "#ED3A5A",
       },
       fontFamily: {
         sans: ["Titillium Web", "sans-serif"],
-      },
-      backgroundImage: {
-        "img-purple": "url('/src/assets/bg.svg')",
       },
     },
   },

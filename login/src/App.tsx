@@ -5,7 +5,7 @@ import { clsx } from 'clsx'
 import * as zod from 'zod'
 
 import { Eye, EyeSlash } from '@phosphor-icons/react'
-import vertigo from './assets/logo.svg'
+
 
 type PasswordType = 'password' | 'text'
 
@@ -48,23 +48,22 @@ export function App() {
   }
 
   return (
-    <div className="grid grid-cols-2 h-screen bg-gray-50">
+    <div className="grid h-screen bg-gray-50 place-items-center">
+    <div className="py-10 px-28">
       <div>
-        <div className="py-10 px-28">
-          <img src={vertigo} alt="Vertigo" />
-          <main className="flex flex-col mt-28 gap-10 w-full max-w-[384px]">
-            <header className="flex flex-col gap-4 w-full max-w-[350px]">
-              <h1 className="font-sans text-4xl font-bold text-gray-800">
-                Acesse a plataforma
+      <main className="flex flex-col mt-2 gap-10 w-full max-w-[384px]">
+        <header className="flex flex-col gap-4 w-full max-w-[350px]">
+          <h1 className="font-sans text-4xl font-bold text-gray-800">
+                Tela de Login
               </h1>
-              <p className="font-sans font-normal text-base text-gray-600">
-                Faça login ou registre-se para começar a construir seus projetos ainda hoje.
-              </p>
-            </header>
-            <form 
-              className="flex flex-col gap-4"
-              onSubmit={handleSubmit(handleLoginSubmit)}
-            >
+          <p className="font-sans font-normal text-base text-gray-600">
+            Login
+          </p>
+        </header>
+        <form 
+          className="flex flex-col gap-4"
+          onSubmit={handleSubmit(handleLoginSubmit)}
+        >
               <div className="flex flex-col gap-2">
                 <label 
                   className="font-sans font-semibold text-sm text-gray-800"
@@ -97,7 +96,7 @@ export function App() {
                     className="text-purple-500 hover:text-purple-400 hover:underline"
                     href="#"
                   >
-                    Esqueceu a senha?
+                    
                   </a>
                 </label>
                 <input
@@ -129,10 +128,10 @@ export function App() {
                   Entrar
                 </button>
                 <span className="text-gray-600">
-                  Ainda não tem uma conta? 
+                  
                 <a 
                   className="text-purple-500 hover:text-purple-400 hover:underline"
-                  href="#"> Inscreva-se
+                  href="#"> 
                 </a> 
                 </span>
               </footer>
@@ -140,7 +139,6 @@ export function App() {
           </main>
         </div>
       </div>
-      <div className="bg-img-purple bg-cover bg-no-repeat" />
     </div>
   )
 }
